@@ -1,5 +1,0 @@
-name: Returning twig module
-type: module
-description: My module that returns twig
-package: Custom
-core: 8.x
