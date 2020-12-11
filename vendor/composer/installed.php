@@ -1,16 +1,25 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-develop',
+    'version' => 'dev-develop',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '0b2e47501386920ebef1bf5c332a6c3013c1e109',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
   array (
+    'ajgl/breakpoint-twig-extension' => 
+    array (
+      'pretty_version' => '0.3.4',
+      'version' => '0.3.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '13ee39406dc3d959c5704b462a3dbc3cbf088f16',
+    ),
     'asm89/stack-cors' => 
     array (
       'pretty_version' => '1.3.0',
@@ -98,6 +107,15 @@
       array (
         0 => '8.9.10',
       ),
+    ),
+    'drupal/admin_toolbar' => 
+    array (
+      'pretty_version' => '2.4.0',
+      'version' => '2.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.4',
     ),
     'drupal/aggregator' => 
     array (
@@ -739,12 +757,12 @@
     ),
     'drupal/recommended-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-develop',
+      'version' => 'dev-develop',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '0b2e47501386920ebef1bf5c332a6c3013c1e109',
     ),
     'drupal/responsive_image' => 
     array (
@@ -878,6 +896,15 @@
       array (
         0 => '8.9.10',
       ),
+    ),
+    'drupal/twig_xdebug' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
     ),
     'drupal/update' => 
     array (

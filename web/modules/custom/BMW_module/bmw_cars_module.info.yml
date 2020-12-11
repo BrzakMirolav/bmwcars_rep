@@ -1,0 +1,5 @@
+name: bmw cars
+type: module
+description: My first custom module
+package: Custom
+core: 8.x

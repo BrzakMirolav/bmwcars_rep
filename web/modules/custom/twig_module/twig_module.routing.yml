@@ -1,0 +1,7 @@
+twig_module: 
+    path: /twigrt
+    defaults:
+        _controller: Drupal\twig_module\Controller\TwigController1::Twigrt
+        _title: 'Our custom article list'
+    requirements: 
+        _permission: "access content"
