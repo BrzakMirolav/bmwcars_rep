@@ -7,22 +7,30 @@ use Drupal\Core\Controller\ControllerBase;
 class BMWmoduleController extends ControllerBase {
 
 
-    public function list_cars(){
+    public function listCars(){
        
       // $cars=  \Drupal::entityTypeManager()->getStorage($entity_type)->loadMultiple([1, 2, 3]);
 
-      /*$car1 = Node::load(1);
-      $car2 = Node::load(2);
-      $car3 = Node::load(3);
-
-      $cars = array($car1, $car2, $car3 );  */
+     
 
       $entity = \Drupal::entityTypeManager()->getStorage('node');
       $query = $entity->getQuery();
 
-      $ids = $query->condition('status', 1)->condition('type', 'article')->execute();
+     // $ids = $query->condition('status', 1)->condition('type', 'cars')->execute();
+      
 
-      $cars = $entity->loadMultiple($ids);
+      //$cars = $entity->loadMultiple($ids);
+
+      $imageUrl = $entity->get('field_car_image')->entity->uri->value;
+
+      $IDs = $this->$entity
+      ->get('node')
+      ->condition('type', 'cars')->execute();
+
+      $cars = $entity->loadMultiple($IDs);
+
+     //// $cars = $this->entityTypeManager->getStorage('node')->loadMultiple($IDs);
+
 
         return array (
                 '#title' => 'Car list',
@@ -30,8 +38,16 @@ class BMWmoduleController extends ControllerBase {
                 '#cars' => $cars
         );
 
+        $renderable = [
+            '#title' => 'Car list',
+            '#theme' => 'bmwcars',
+            '#cars' => $cars,
+          ];
+          $rendered = \Drupal::service('renderer')->renderPlain($renderable);
+    
+
     }
 
-
+   
 
 }

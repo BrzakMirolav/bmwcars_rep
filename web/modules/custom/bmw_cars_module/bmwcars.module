@@ -5,9 +5,15 @@
  */
 function bwm_cars_module_theme($existing, $type, $theme, $path) {
 
-  return array(
+  /*return array(
     'bmwcars' => array(
       'variables' => array('cars' => array(), 'title' => '')
     )
+  );*/
+
+  return array(
+    'bmwcars' => [
+      'variables' => ['cars' => [], 'title' => '', imageUrl=> '']
+    ]
   );
 }
