@@ -1,0 +1,10 @@
+{{ title }}
+
+
+{% for car in cars %}
+  {{ car->field_description->value }} 
+  <div>
+    <img src="{{ file_url(node.field_car_image.entity.uri.value) }}">
+</div>
+{% endfor %} 
+

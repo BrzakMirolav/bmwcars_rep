@@ -1,0 +1,7 @@
+bmw_cars_module:
+      path: /bmwm
+      defaults:
+          _controller: Drupal\bmw_cars_module\Controller\BMWmoduleController::listCars
+      
+      requirements:
+          _permission: 'access content'

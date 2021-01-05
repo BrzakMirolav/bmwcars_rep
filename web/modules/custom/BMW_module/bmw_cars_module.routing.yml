@@ -1,6 +1,0 @@
-bmw_cars_module:
-      path: /bmwm
-      defaults:
-          _controller: Drupal\bmw_cars_module\Controller\BMWmoduleController::hello
-      requirements:
-          _permission: 'access content'
